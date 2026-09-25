@@ -1,0 +1,35 @@
+You are helping me prepare for interview questions about my resume. Create a single Markdown file named "digit-insurance-resume-qa.md" that will make me fully interview-ready on my Digit Insurance work experience — no gaps, nothing left for me to fill in later.
+
+CONTEXT — my resume bullet for this role (Software Engineer, Digit Insurance, Ahmedabad, Jul 2024–Present):
+
+- Led backend development for the V4 Health Claims Platform, building claim submission, eligibility verification, document processing, and fraud-investigation workflows using Spring Boot microservices, rebuilt end-to-end from the prior version.
+- Designed and enhanced 80+ RESTful APIs with validation, pagination, RBAC, and secure authentication to support high-volume insurance claim processing.
+- Architected a Kafka-based event-driven pipeline processing 50K+ claim-status events/day, and applied Factory/Singleton design patterns to standardize fraud-rule logic across 15+ microservices, cutting duplicate code by 30%.
+- Integrated AI-powered fraud detection, blacklist checks, and document-generation services into claim workflows, and built intelligent auto-prefill by aggregating data across internal systems, cutting manual claim intake effort.
+- Improved backend performance by up to 30% by optimizing complex JPA queries, adding database indexing, and reducing synchronous service calls.
+- Resolved 50+ high-priority production incidents via log analysis, SQL profiling, and root-cause debugging, reducing MTTR by approximately 40%; engineered centralized exception handling and structured logging to support this.
+- Automated CI/CD pipelines using Jenkins for build, test, and deployment, improving release reliability and reducing manual deployment effort.
+- Tech stack: Java, Spring Boot, Microservices, REST APIs, PostgreSQL, JPA, Hibernate, Angular, TypeScript, Jenkins, Docker, Git, Redis, CI/CD.
+
+Build the file in TWO parts, matching two separate study sessions:
+
+## PART 1 — Evidence-Based Deep-Dive Q&A
+For EACH bullet above, write 3–5 realistic interviewer follow-up questions that probe for hard specifics — exact numbers, concrete decisions, "walk me through it," "why that approach and not X," "what would break at 2x scale," "show me the code." Then write a complete, confident, first-person answer to each:
+- Ground every answer in specific, plausible technical detail (exact flow, table/entity names, config choices, before/after numbers) even where I haven't given you the real specifics — invent the most defensible, realistic version a 2-YOE Spring Boot engineer at an insurance company would actually have, and commit to it consistently across all answers (don't contradict yourself between questions).
+- Use STAR structure (Situation/Task/Action/Result) where the question is behavioral-flavored, otherwise a clear technical narrative.
+- Include short code snippets (Java/Spring Boot) wherever a question would naturally invite "show me" — e.g. a Kafka consumer/producer config, a Factory/Singleton pattern example for the fraud-rule logic, a JPA query before/after optimization, a centralized @ControllerAdvice exception handler.
+- Cover trade-offs explicitly: why Kafka over alternatives, why these specific design patterns, why these specific indexes, what you'd do differently now.
+- Do NOT ask me to supply details or leave any placeholder/blank — always commit to a specific, best-guess answer.
+
+## PART 2 — Framework-Only + Behavioral Q&A
+Two sub-sections:
+1. **Framework/conceptual questions**: general technical questions an interviewer could ask around the technologies and patterns in this role WITHOUT tying them to my specific numbers — e.g. "explain how Kafka consumer groups work," "what's the difference between Factory and Singleton, and when would you use each," "how does Spring's RBAC/method security work under the hood," "how do you decide which columns to index," "walk me through Spring's exception handling mechanisms," "what does a Jenkins CI/CD pipeline typically look like." Answer these as solid, correct, general technical explanations (textbook-accurate, not resume-specific), so they hold up even if pressed hard on fundamentals.
+2. **Behavioral questions**: 6–8 likely behavioral questions tied naturally to this role (e.g. "tell me about a time you resolved a critical production incident," "a time you disagreed with a technical decision," "a time you had to learn something fast under pressure," "how you handle being on-call/firefighting," "an example of driving a project end-to-end"). Answer each in full STAR format, grounded in the incident-resolution and platform-rebuild bullets above, written naturally as personal stories, not generic advice.
+
+FORMATTING RULES:
+- Clean Markdown, one H2 per bullet/topic, H3 for each question, answer directly below.
+- Every answer must be complete and ready to say out loud — no "[insert detail here]," no meta-commentary, no hedging language like "you could say."
+- Keep answers tight enough to say in 60–90 seconds each unless the question explicitly needs more (e.g. a full incident walkthrough).
+- End the file with a 10-question rapid-fire "gut check" quiz (question only, no answer) I can use to self-test after reading.
+
+Output only the Markdown file content, nothing else.
